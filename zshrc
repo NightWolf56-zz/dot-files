@@ -95,6 +95,9 @@ if [ -x /usr/bin/dircolors ]; then
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 fi
 
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
