@@ -811,41 +811,51 @@ background_opacity: 1.0
   # Print all received window events.
   #print_events: false
 
-# Colors (Night Owl)
-colors:
-   # Default colors
+  # COLORSCHEME: base16-google-dark.yml
+  # Default colors
   primary:
-    background: '#011627'
-    foreground: '#d6deeb'
+    background: '0x1d1f21'
+    foreground: '0xc5c8c6'
 
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '#011627'
-    cursor: '#d6deeb'
+    text: '0x1d1f21'
+    cursor: '0xc5c8c6'
 
+  # Normal colors
   selection:
     background: '#1b90dd'
 
    # Normal colors
   normal:
-    black:   '#011627'
-    red:     '#ef5350'
-    green:   '#22da6e'
-    yellow:  '#c5e478'
-    blue:    '#82aaff'
-    magenta: '#c792ea'
-    cyan:    '#21c7a8'
-    white:   '#ffffff'
+    black: '0x1d1f21'
+    red: '0xcc342b'
+    green: '0x198844'
+    yellow: '0xfba922'
+    blue: '0x3971ed'  
+    magenta: '0xa36ac7'
+    cyan: '0x3971ed'
+    white: '0xc5c8c6'
 
-   # Bright colors
+  # Bright colors
   bright:
-    black:   '#575656'
-    red:     '#ef5350'
-    green:   '#22da6e'
-    yellow:  '#ffeb95'
-    blue:    '#82aaff'
-    magenta: '#c792ea'
-    cyan:    '#7fdbca'
-    white:   '#ffffff'
+    black: '0x969896'
+    red: '0xf96a38'
+    green: '0x282a2e'
+    yellow: '0x373b41'
+    blue: '0xb4b7b4'
+    magenta: '0xe0e0e0'
+    cyan: '0x3971ed'
+    white: '0xffffff'
+
+  indexed_colors:
+    - {index: 16, color: '0xf96a38'}
+    - {index: 17, color: '0x3971ed'}
+    - {index: 18, color: '0x282a2e'}
+    - {index: 19, color: '0x373b41'}
+    - {index: 20, color: '0xb4b7b4'}
+    - {index: 21, color: '0xe0e0e0'}
+
 
 # Make cursor blink
 cursor:
